@@ -1,117 +1,16 @@
-# frontend-backend-flask-react-vite
-# 🧩 Flask + React CRUD Application
+# React + Vite
 
-A simple full-stack **CRUD (Create, Read, Update, Delete)** application built using **Flask (Python)** for the backend API and **React (JavaScript)** for the frontend UI.  
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-The app allows users to manage a list of tasks — create, view, update, and delete — demonstrating clean API design and component-based UI structure.
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🚀 Features
+## React Compiler
 
-✅ Create, Read, Update, and Delete (CRUD) tasks  
-✅ Flask REST API with SQLite database  
-✅ React frontend using Axios for API calls  
-✅ CORS-enabled backend for cross-origin communication  
-✅ Simple structure — perfect for learning full-stack integration  
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the ESLint configuration
 
-## 🏗️ Project Structure
-
-crud-project/
-├── backend/
-│ ├── app.py
-│ ├── models.py
-│ ├── database.db
-│ └── requirements.txt
-└── frontend/
-├── package.json
-└── src/
-├── App.js
-├── api.js
-└── components/
-└── TaskList.js
-
----
-
-## ⚙️ Setup Instructions
-
-### 1️⃣ Clone the repository
-```bash
-git clone <your-repo-url>
-cd crud-project
-cd backend
-python -m venv venv
-venv\Scripts\activate     # (Windows)
-# source venv/bin/activate  # (Mac/Linux)
-pip install -r requirements.txt
-python app.py
-Frontend (React)
-
-Uses axios to communicate with the Flask API.
-
-Components located under frontend/src/components/
-
-Example:
-
-TaskList.js handles adding, editing, and deleting tasks.
-
-api.js defines a reusable Axios instance for API calls.
-
-🧰 Tech Stack
-
-Backend
-
-Python 3.x
-
-Flask
-
-Flask-CORS
-
-Flask-SQLAlchemy
-
-SQLite
-
-Frontend
-
-React (CRA)
-
-Axios
-
-JavaScript (ES6+)
-
-🧪 Run Tests (Optional)
-
-If you add pytest-based tests in the backend:
-
-cd backend
-pytest -v
-
-📸 Demo Workflow
-
-Start Flask backend (python app.py)
-
-Start React frontend (npm start)
-
-Open http://localhost:3000
-
-Add, edit, or delete tasks — changes reflect instantly in the database.
-
-📂 Future Improvements
-
-Add comments API (Task → Comment relationship)
-
-Add user authentication (JWT)
-
-Add pagination and search in React UI
-
-Deploy full app to Render / Vercel + Railway
-
-🧑‍💻 Author
-
-polishetty Bala Sushmitha
-📧 polishettybalasuhmitha12@gmail..com
-
-🔗 https://www.linkedin.com/in/bala-sushmitha-polishetty-872a84285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
- | https://github.com/B237-dot
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
