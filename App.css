@@ -1,0 +1,213 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #555;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.error {
+  background-color: #fee;
+  color: #c33;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ef4444;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  min-height: 70vh;
+}
+
+.tasks-panel,
+.comments-panel {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #1d4ed8;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+  font-style: italic;
+}
+
+.tasks-list,
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.task-item:hover {
+  border-color: #2563eb;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+}
+
+.task-item.active {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.task-item h3 {
+  margin: 0 0 8px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.task-item p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 0.95em;
+}
+
+.task-item small {
+  display: block;
+  color: #999;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
+
+.task-actions,
+.comment-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn-edit,
+.btn-delete,
+.btn-save,
+.btn-cancel {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-edit {
+  background-color: #eab308;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #ca8a04;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+.btn-save {
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-save:hover {
+  background-color: #059669;
+}
+
+.btn-cancel {
+  background-color: #9ca3af;
+  color: white;
+}
+
+.btn-cancel:hover {
+  background-color: #6b7280;
+}
+
+.comment-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: white;
+}
+
+.comment-item p {
+  margin: 0 0 8px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+.comment-item small {
+  color: #999;
+  font-size: 0.8em;
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .tasks-panel,
+  .comments-panel {
+    min-height: auto;
+  }
+}
